@@ -1,0 +1,183 @@
+html, body {
+	height: 100%;
+}
+
+.main_wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+
+/*Main styles*/
+
+.title_wrapper {
+	background-color: #C6C6DC;
+	height: 140px;
+	margin-bottom: 23px;
+}
+
+h1 {
+	font-size: 48px;
+	font-style: italic;
+	color: #202846;
+	margin-left: 227px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.main {
+	max-width: 1575px;
+	min-height: 227px;
+	margin: 0 auto;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin-bottom: 23px;
+	padding: 0px 25px;
+	position: relative;
+}
+
+.main img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.sub_title {
+	font-size: 36px;
+	font-weight: bold;
+	font-style: italic;
+	text-wrap: balance;
+	text-align: center;
+}
+
+.txt {
+	min-height: 380px;
+	max-width: 1574px;
+	background-color: #CBCBCB;
+	margin: 0 auto;
+	margin-bottom: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0px 74px;
+}
+
+.txt p {
+	font-size: 30px;
+	font-weight: normal;
+	font-style: normal;
+	color: #202846;
+}
+
+/*Footer*/
+
+.footer_wrapper {
+    background-color: #202846;
+    color: #EEECF1;
+    width: 100%;
+    height: 90px;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.footer_wrapper p {
+    max-width: 709px;
+    text-align: center;
+    margin-left: 60px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+	h2 {
+		font-size: 42px;
+	}
+	
+	.sub_title {
+		font-size: 30px;
+	}
+
+	.footer_wrapper {
+        height: 60px;
+        font-size: 30px;
+    }
+    
+    .footer_wrapper p {
+        margin-left: 45px;
+    }
+}
+
+@media (max-width: 922px) {
+	.title_wrapper {
+		height: 80px;
+		margin-bottom: 36px;
+	}
+	
+	h1 {
+		font-size: 32px;
+		margin-left: 70px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+	
+	.sub_title {
+		font-size: 20px;
+	}
+
+	.txt {
+		min-height: 280px;
+		padding: 0px 50px;
+	}
+	
+	.txt p {
+		font-size: 20px;
+	}
+
+	.txt p + p {
+		padding-top: 10px;
+	}
+
+	.footer_wrapper {
+        min-height: 35px;
+        font-size: 20px;
+    }
+    
+    .footer_wrapper p {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 30px;
+		margin: 0;
+		text-align: center;
+	}
+
+	.txt {
+		padding: 20px 25px;
+	}
+}
